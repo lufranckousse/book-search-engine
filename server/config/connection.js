@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://lufranckousse:reacttask@cluster0.k0cfidq.mongodb.net/googlebooks?retryWrites=true&appName=Cluster0&ssl=true";
+const uri = "mongodb+srv://lufranckousse:reacttask@cluster0.k0cfidq.mongodb.net/googlebooks?retryWrites=true&appName=Cluster0";
 
 mongoose.connect(
   
