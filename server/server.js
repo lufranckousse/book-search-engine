@@ -36,11 +36,13 @@ const startApolloServer = async (typeDefs, resolvers) => {
   });
 
   db.once('open', () => {
-    app.listen(PORT, () => {
+    const HOST = 'book-search-9m5v.onrender.com'; // or your desired host address
+app.listen({ port: PORT }, () => {
+  
       console.log(`API server running on port ${PORT}!`);
       // log where we can go to test our GQL API
       console.log(
-        `Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`
+        `Use GraphQL at https://book-search-9m5v.onrender.com:${PORT}${server.graphqlPath}`
       );
     });
   });
